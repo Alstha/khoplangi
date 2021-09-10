@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN KHOPLANGI</title>
+    <link rel="shortcut icon" href="img/my-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://alstha.github.io/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{background-image: url(img/login.png);
+            background-repeat: no-repeat;
+            width: 100vw;
+            height: 100vh;
+            background-size: 100vw 114vh;
+        }
+        #load{
+    
+    background-repeat: no-repeat;
+    background-image: url(img/load.gif);
+    position: absolute;
+    z-index: 199;
+    height: 150%;
+    width: 100%;
+    background-size: 1340px 650px;
+   margin-top: 30px;
+}
+    </style>
+</head>
+<body onload="Myfuc()">
+    <div id="load">
+        
+    </div>
+    <div id="bod">
+        <h1 id="login"> <b> L<br>O<br>G<br>I<br>N</b></h1>
+        <form action="khoplangi.html">
+            <div class="inp">
+                Username:- <br><input class="in" type="text email" required placeholder="name / email"><br>
+                Password:- <br> <input class="in" type="password" required placeholder="password (any)"> <br><hr><br>
+            
+                    <h2 style="color: red;"></h2>Purpose:-</h2> <br>
+                <div class="pur">
+                    <label><input class="cl" type="radio" name="p" required>SELLER</label>
+                    <label><input class="cl" type="radio" name="p" required>VISITOR</label>
+                    <label><input class="cl" type="radio" name="p" required>BUYER</label>
+            </div><br>
+            <input id="sub" type="submit" value="Sign Up">
+            </div>
+            </form>
+            <div class="img">
+                also visit > <br>
+                <a href="https://www.youtube.com/channel/UCPcO8laOCE9CfB-XId4UmvA" target="blank"><img src="img/youtube.png" width="40px" alt="YT">Yt<br><br></a>
+                <a href="https://www.facebook.com/alstha.null" target="blank"><img src="img/facebook.png" width="40px" alt="FB">Fb<br><br></a>
+                <a href="http://binastha.com.np" target="blank"><img src="img/computer.png" width="40px" alt="WWW">Web<br></a>
+            </div>
+            <h4>By:- ALSON SHRESTHA</h4>
+        <footer>
+            <img id="ani" src="img/cart-removebg-preview (1).png" width="125px" alt="">
+        </footer>
+    </div>
+    <script>
+        $(document).ready(function(){
+
+            $('body').on ("contextmenu", function(){
+                return false;
+            })
+        })
+        var w= document.getElementById("load");
+function Myfuc(){
+    load.style.display="none"
+}
+    </script>
+</body>
+</html>
